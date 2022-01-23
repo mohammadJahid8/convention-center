@@ -1,0 +1,22 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500&display=swap');
+
+header{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-button{
+    padding: 5px 40px;
+    color: #3F87F5;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.city-hall{
+    font-size: 22px;
+    font-weight: bold;
+}
+.menu-bar{
+    font-weight: 600;
+    font-size: 16px;
+}
