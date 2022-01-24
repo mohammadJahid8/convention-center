@@ -10,10 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/6f41a10472.js" crossorigin="anonymous"></script>
     <title>The City Hall</title>
 </head>
 
 <body>
+    <!-- navbar   -->
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white my-3">
@@ -42,8 +45,9 @@
             </div>
         </nav>
 
+        <!-- slider  -->
 
-        <section>
+        <section class="slider-parent">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -56,12 +60,12 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/banner.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h1>The perfect venue for your
-                                <br> next event
+                        <div class="carousel-caption">
+                            <h1 class="perfect">The perfect venue for your next event
                             </h1>
-                            <p class="fs-6 fw-lighter">We Work with all Budgets. No Budget is Big or Small.
-                                <br> Lets
+                            <p class="fs-6 fw-lighter d-none d-md-block">We Work with all Budgets. No Budget is Big or
+                                Small. <br>
+                                Lets
                                 talk and
                                 compose Beautiful
                                 memories to last a lifetime.
@@ -71,8 +75,8 @@
                     </div>
                     <div class="carousel-item">
                         <img src="images/wedding.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h1>We plan, manage and create the <br> perfect event for you!
+                        <div class="carousel-caption">
+                            <h1 class="perfect">We plan, manage and create the perfect event for you!
                             </h1>
                             <!-- <p></p> -->
                             <button type="button" class="btn btn-light header-button">Book Now</button>
@@ -80,8 +84,8 @@
                     </div>
                     <div class="carousel-item">
                         <img src="images/wedding2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h1>Plan and create your own events or business meetings.
+                        <div class="carousel-caption">
+                            <h1 class="perfect">Plan and create your own events or business meetings.
                             </h1>
                             <!-- <p>Some representative placeholder content for the third slide.</p> -->
                             <button type="button" class="btn btn-light header-button">Book Now</button>
@@ -103,9 +107,13 @@
 
         </section>
     </header>
+
+
+
     <main>
-        <section class="container mt-5">
-            <div class="row">
+        <!-- our goal section  -->
+        <section class="container">
+            <div class="row mt-5">
                 <div class="col-12 d-flex col-lg-6 col-md-6">
                     <div>
                         <img class="img-fluid" src="images/wedding.png" alt="">
@@ -126,9 +134,118 @@
                                 src="/icons/arrow-forward 1.svg" alt=""></button>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- our package  -->
 
 
 
+        <section class="container mt-5">
+            <h1 class="d-flex justify-content-center package">Our Packages</h1>
+            <div class="row row-cols-1 row-cols-md-3  text-center">
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card mb-4 rounded-3 border-0">
+                        <div class=" py-3">
+                            <h1 class="my-0 fw-normal fw-bold align-text ps-3">$300</h1>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title align-text">Business fair
+                            </h3>
+                            <ul class="list-unstyled mt-3 mb-4 align-text list-group">
+                                <li class="far fa-check-circle" aria-hidden="true">10 users included</li>
+                                <li class="far fa-check-circle" aria-hidden="true">2 GB of storage</li>
+                                <li class="far fa-check-circle" aria-hidden="true">Email support</li>
+                                <li class="far fa-check-circle" aria-hidden="true">Help center access</li>
+                                <li class="far fa-check-circle" aria-hidden="true">Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary rounded-pill">Choose a
+                                plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card mb-4 rounded-3 border-0">
+                        <div class=" py-3">
+                            <h1 class="my-0 fw-normal fw-bold align-text ps-3">$300</h1>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title align-text">wedding basic
+                            </h3>
+                            <ul class="list-unstyled mt-3 mb-4 align-text list-group">
+                                <li class="far fa-check-circle" aria-hidden="true">10 users included</li>
+                                <li class="far fa-check-circle" aria-hidden="true">2 GB of storage</li>
+                                <li class="far fa-check-circle" aria-hidden="true">Email support</li>
+                                <li class="far fa-check-circle" aria-hidden="true">Help center access</li>
+                                <li class="far fa-check-circle" aria-hidden="true">Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary rounded-pill">Choose a
+                                plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card mb-4 bg-primary text-white hot-card pt-4 pb-2 border-0">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            HOT
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                        <div class=" py-3">
+                            <h1 class="my-0 fw-normal fw-bold align-text ps-3">$300</h1>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title align-text">Wedding plus
+                            </h3>
+                            <ul class="list-unstyled mt-3 mb-4 align-text list-group">
+                                <li class="far fa-check-circle" aria-hidden="true">10 users included</li>
+                                <li class="far fa-check-circle" aria-hidden="true">2 GB of storage</li>
+                                <li class="far fa-check-circle" aria-hidden="true">Email support</li>
+                                <li class="far fa-check-circle" aria-hidden="true">Help center access</li>
+                                <li class="far fa-check-circle" aria-hidden="true">Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-light text-primary rounded-pill">Choose a
+                                plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class=" py-3 text-white bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">$1200</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>30 users included</li>
+                            <li>15 GB of storage</li>
+                            <li>Phone and email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="card mb-4 rounded-3 border-0">
+                    <div class=" py-3">
+                        <h1 class="my-0 fw-normal fw-bold align-text ps-3">$300</h1>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title pricing-card-title align-text">Corporate event
+                        </h3>
+                        <ul class="list-unstyled mt-3 mb-4 align-text list-group">
+                            <li class="far fa-check-circle" aria-hidden="true">10 users included</li>
+                            <li class="far fa-check-circle" aria-hidden="true">2 GB of storage</li>
+                            <li class="far fa-check-circle" aria-hidden="true">Email support</li>
+                            <li class="far fa-check-circle" aria-hidden="true">Help center access</li>
+                            <li class="far fa-check-circle" aria-hidden="true">Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary rounded-pill">Choose a
+                            plan</button>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>
