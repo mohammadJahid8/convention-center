@@ -34,13 +34,13 @@ header{
     margin-bottom: 90px;
 }
 footer{
-    height: 280px;
-    
+    height: 300px;
+    width: 100%;
 }
 
 
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 768px) {
     .perfect{
         font-size: 15px;
         
@@ -51,6 +51,8 @@ footer{
         font-size: 12px;
     }
     footer{
+        
+        height: 400px;
         width: 100%;
     }
  
