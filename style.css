@@ -1,6 +1,9 @@
 /* font style */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500&display=swap');
 
+html{
+    overflow-x: hidden;
+    }
 header{
     font-family: 'Poppins', sans-serif;
 }
@@ -30,6 +33,10 @@ header{
     margin-top: 40px;
     margin-bottom: 90px;
 }
+footer{
+    height: 280px;
+    
+}
 
 
 
@@ -42,6 +49,9 @@ header{
         margin-bottom: 4px;
         padding: 5px;
         font-size: 12px;
+    }
+    footer{
+        width: 100%;
     }
  
 }
